@@ -50,6 +50,8 @@ with st.sidebar:
     # Adding file uploader to sidebar for selecting images
     source_txt = st.text_input("Texto a detectar:", key="text")
     st.button("Iniciar deteccion", on_click=language_detection_example(client, source_txt) )
+    st.subheader("UTADEO 2023")
+    st.subheader("Edward, Ney, Jesus")
 
 if len(source_txt) >0:
     st.subheader(source_txt)
